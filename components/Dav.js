@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/4D LOS RITAS.gltf");
+  const { nodes, materials } = useGLTF("/5D LOS RITAS.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -14,7 +14,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano001.geometry}
         material={materials["Material.001"]}
-        position={[-1.08, 0.07, -0.32]}
+        position={[-0.04, 0.07, 0.26]}
         rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
@@ -22,7 +22,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano002.geometry}
         material={materials["Material.001"]}
-        position={[-1.08, 0.07, -0.32]}
+        position={[-0.04, 0.07, 0.26]}
         rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
@@ -30,7 +30,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Plano003.geometry}
         material={materials["Material.001"]}
-        position={[-1.08, 0.07, -0.85]}
+        position={[-0.04, 0.07, -0.27]}
         rotation={[0, Math.PI / 2, 0]}
       />
       <mesh
@@ -38,7 +38,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto.geometry}
         material={materials["Material.001"]}
-        position={[-0.75, -0.14, -0.57]}
+        position={[0.29, -0.14, 0.01]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
       <mesh
@@ -46,7 +46,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto001.geometry}
         material={materials["Material.001"]}
-        position={[-0.94, -0.14, 0.1]}
+        position={[0.09, -0.14, 0.68]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
       <mesh
@@ -54,13 +54,10 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto002.geometry}
         material={materials["Material.001"]}
-        position={[-0.8, -0.08, -1.09]}
+        position={[0.24, -0.08, -0.51]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
-      <group
-        position={[-1.04, -0.09, -0.58]}
-        rotation={[-Math.PI, 0, -Math.PI]}
-      >
+      <group position={[0, -0.09, 0]} rotation={[-Math.PI, 0, -Math.PI]}>
         <mesh
           castShadow
           receiveShadow
@@ -84,4 +81,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/4D LOS RITAS.gltf");
+useGLTF.preload("/5D LOS RITAS.gltf");

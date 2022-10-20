@@ -60,8 +60,8 @@ const Home: NextPage = () => {
               width: 100,
               height: 100,
             }
-            ,  focus: 10, fov: 80 ,zoom: 6, position:[0, .5, 1.5]}} >
-          {/* <focus-camera> */}
+            ,  focus: 10, fov: 80 ,zoom: 6, position:[2, .5, 1.5]}} >
+          <focus-camera>
           <ambientLight intensity={0.6} />
           <pointLight position={[10, 10, 10]} />
           {/* <directionalLight position={[-1, 0.5, 0]} /> */}
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
               <Dav 
                 // className={styles.dav}
                 scale={.2}
-                position={[0,0.15,0]}
+                position={[.0,0.15,0]}
                 rotation={[Math.PI / 1000, 0, 0]}
               />
           
